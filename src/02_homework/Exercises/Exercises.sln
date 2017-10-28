@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_guessDefinedNumber", "ConsoleApp1\01_guessDefinedNumber.csproj", "{EEFBE1E6-5494-4F3F-B74C-1B50260C1402}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_guessDefinedNumberEquals", "02_guessDefinedNumberEquals\02_guessDefinedNumberEquals.csproj", "{F40EDCC0-1699-43BB-A97E-E1F8844B60F4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_guessRandomNumber", "03_guessRandomNumber\03_guessRandomNumber.csproj", "{2E9A8BB7-492F-4DD4-8431-5EA03EF29E3B}"
@@ -13,16 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_guessRandomNumberWhileTr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_guessRandomNumberWhileBreak", "05_guessRandomNumberWhileBreak\05_guessRandomNumberWhileBreak.csproj", "{6D619719-8999-4225-89C6-2E8B60546353}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_guessPredefinedNumber", "01_guessPredefinedNumber\01_guessPredefinedNumber.csproj", "{74FBD937-106C-430C-B8BF-7D955E8A647E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EEFBE1E6-5494-4F3F-B74C-1B50260C1402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EEFBE1E6-5494-4F3F-B74C-1B50260C1402}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EEFBE1E6-5494-4F3F-B74C-1B50260C1402}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EEFBE1E6-5494-4F3F-B74C-1B50260C1402}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F40EDCC0-1699-43BB-A97E-E1F8844B60F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F40EDCC0-1699-43BB-A97E-E1F8844B60F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F40EDCC0-1699-43BB-A97E-E1F8844B60F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{6D619719-8999-4225-89C6-2E8B60546353}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D619719-8999-4225-89C6-2E8B60546353}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D619719-8999-4225-89C6-2E8B60546353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FBD937-106C-430C-B8BF-7D955E8A647E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FBD937-106C-430C-B8BF-7D955E8A647E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FBD937-106C-430C-B8BF-7D955E8A647E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FBD937-106C-430C-B8BF-7D955E8A647E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
