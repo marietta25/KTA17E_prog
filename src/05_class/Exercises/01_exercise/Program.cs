@@ -36,9 +36,9 @@ namespace _01_exercise
             double totalPrice = sum - grat;
 
             Console.WriteLine("--------------------------------------------");
-            Console.WriteLine($"Subtotal: {sum}");
-            Console.WriteLine($"15% Gratuity: {grat}");
-            Console.WriteLine($"Total: {totalPrice}");
+            Console.WriteLine($"Subtotal: €{sum}");
+            Console.WriteLine($"15% Gratuity: €{grat}");
+            Console.WriteLine($"Total: €{totalPrice}");
 
             Console.WriteLine("Press any key to continue");
             Console.ReadLine();
