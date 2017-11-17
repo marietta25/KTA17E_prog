@@ -16,7 +16,6 @@ namespace _01_exercise
             Console.WriteLine("--------------------------------------------");
 
             List<double> priceList = new List<double>();
-            //double[] prices = new double[] { };
             bool continueAsk = true;
             while (continueAsk)
             {
