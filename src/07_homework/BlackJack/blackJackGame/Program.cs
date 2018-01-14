@@ -217,7 +217,7 @@ namespace blackJackGame
                 }
                 //Console.WriteLine($"You have: {item}");
             }
-            Console.WriteLine($"Your total: {total}");
+            //Console.WriteLine($"Your total: {total}");
             return total;
         }
         static void FinishGame(int total1, int total2)
