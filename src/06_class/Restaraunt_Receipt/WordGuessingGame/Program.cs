@@ -27,6 +27,8 @@ namespace WordGuessingGame
             //mitu tähte sõnas
             int characters = word.Length;
 
+            StringBuilder sb = new StringBuilder(word);
+
             //prindi välja kriipsud
             for (var i = 1; i <= characters; i++)
             {
@@ -42,24 +44,15 @@ namespace WordGuessingGame
 
             var foundIndexes = new List<int>();
 
-
+            int index = 0;
             for (var i = 0; i < word.Length; i++)
             {
-                if (word.IndexOf(character) == -1)
-                {
-                    Console.WriteLine();
-                    Console.WriteLine("Pakkusid valesti");
-                }
-                else
-                {
-                    Console.WriteLine("Pakkusid õigesti");
-                    foundIndexes.Add(word.IndexOf(character));
-                }
+                index = word.IndexOf(character);
+                foundIndexes.Add(index);
             }
-
             
-
-
+            //sb[word[foundIndexes[0]]] = character;
+            Console.WriteLine(word[foundIndexes[0]]);
 
 
             Console.WriteLine(word);
