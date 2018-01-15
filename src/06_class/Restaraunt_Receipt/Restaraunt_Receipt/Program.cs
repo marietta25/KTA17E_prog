@@ -17,8 +17,7 @@ namespace Restaraunt_Receipt
             Console.WriteLine("--------------------------------------------");
             
             List<double> priceList = new List<double>();
-            bool continueAsk = true;
-            while (continueAsk)
+            while (true)
                 {
                 Console.Write("Enter price of food item [-1 to quit]: ");
                 string input = Console.ReadLine();
