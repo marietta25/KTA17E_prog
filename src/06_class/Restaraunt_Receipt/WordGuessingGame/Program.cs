@@ -13,50 +13,90 @@ namespace WordGuessingGame
             //mingi arv etteantud sõnu
             //arvuti valib suvaliselt sõna
             //mängija pakub tähti
-            //kindel arv kordi valesti pakkumisest
+            //kindel arv kordi valesti pakkumisi
 
             Console.WriteLine("Valin välja ühe sõna.");
-            Console.WriteLine("Sina hakka tähti pakkuma.");
+            Console.WriteLine("Sina hakka tähti pakkuma. Valesti saad arvata 5 korda.");
             Console.WriteLine();
 
             List<string> words = new List<string> { "raamatukogu", "taevas", "rohutirts", "ploomipuu", "linnapea", "kassipoeg", "suurettevõte", "aplikatsioon", "universum", "korsten"};
 
             int random = new Random().Next(0, words.Count);
-            string word = words[random];
+            string word = words[random].ToUpper();
 
-            //mitu tähte sõnas
-            int characters = word.Length;
-
-            StringBuilder sb = new StringBuilder(word);
-
-            //prindi välja kriipsud
-            for (var i = 1; i <= characters; i++)
+            //prindi sõna pikkuselt välja tärnid
+            StringBuilder sb = new StringBuilder(word.Length);
+            
+            for (var i = 0; i < word.Length; i++)
             {
-                Console.Write("_ ");
+                sb.Append("*");
+            }
+
+            Console.WriteLine(sb.ToString());
+            Console.WriteLine();
+
+            StringBuilder rightGuesses = new StringBuilder();
+            StringBuilder wrongGuesses = new StringBuilder();
+
+            // 5 elu
+            int tries = 5;
+
+            bool hasWon = false;
+            int visibleChars = 0;
+
+            string input;
+            char guessedChar;
+
+            while (!hasWon && (tries>0))
+            {
+                Console.WriteLine();
+                Console.Write("Paku täht: ");
+
+                input = Console.ReadLine().ToUpper();
+                guessedChar = input[0];
+
+                if (word.Contains(guessedChar))
+                {
+                    Console.WriteLine();
+                    Console.WriteLine($"Pakutud täht '{guessedChar}' on sõnas olemas");
+                    rightGuesses.Append(guessedChar);
+                    for (int i = 0; i < word.Length; i++) 
+                    {
+                        if (word[i] == guessedChar) 
+                        {
+                            sb[i] = word[i];
+                            visibleChars++;
+                        }
+                    }
+                    if (visibleChars == word.Length)
+                    {
+                        hasWon = true;
+                    }
+                }
+                else 
+                {
+                    Console.WriteLine();
+                    Console.WriteLine($"Pakutud tähte '{guessedChar}' sõnas ei sisaldu");
+                    wrongGuesses.Append(guessedChar);
+                    tries--;
+                }
+                Console.WriteLine();
+                Console.WriteLine(sb.ToString());
+                Console.WriteLine($"Õigesti pakutud tähed: {rightGuesses.ToString()}; Valesti pakutud tähed: {wrongGuesses.ToString()}");
             }
 
             Console.WriteLine();
-            Console.Write("Paku täht: ");
 
-            string character = Console.ReadLine();
-            List<string> userInput = new List<string>();
-            userInput.Add(character);
-
-            var foundIndexes = new List<int>();
-
-            int index = 0;
-            for (var i = 0; i < word.Length; i++)
+            if (hasWon) 
             {
-                index = word.IndexOf(character);
-                foundIndexes.Add(index);
+                Console.WriteLine("Arvasid sõna ära! Võitsid mängu!");
             }
-            
-            //sb[word[foundIndexes[0]]] = character;
-            Console.WriteLine(word[foundIndexes[0]]);
+            else
+            {
+                Console.WriteLine($"Kaotasid mängu! Otsitav sõna oli {word}");
+            }
 
-
-            Console.WriteLine(word);
-
+            Console.WriteLine();
             Console.WriteLine("Press any key to continue");
             Console.ReadLine();
         }
