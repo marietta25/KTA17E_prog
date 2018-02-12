@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurant_OO
+namespace restaurant_OO
 {
     class Restaurant
     {
@@ -48,7 +48,7 @@ namespace Restaurant_OO
             {
                 str.AppendLine($"Price of food item: {entry}");
             }
-            
+
             str.AppendLine($"SubTotal: €{_tab.Entries.Sum()}");
             str.AppendLine($"15% Gratuity: €{_tab.Entries} ");
             str.AppendLine($"Total: €{_tab.Entries} ");
@@ -78,6 +78,5 @@ namespace Restaurant_OO
             Console.WriteLine("Press any key to continue");
             Console.ReadKey();
         }
-        
     }
 }

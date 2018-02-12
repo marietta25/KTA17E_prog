@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0205E121-0699-40BB-8A68-787A3F723A4B}</ProjectGuid>
+    <ProjectGuid>{FAB51792-E03F-40C9-9616-AF245696E420}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>WordGuessingGame</RootNamespace>
-    <AssemblyName>WordGuessingGame</AssemblyName>
+    <RootNamespace>restaurantReceipt</RootNamespace>
+    <AssemblyName>restaurantReceipt</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
