@@ -29,12 +29,13 @@ namespace wordMixer
                 // eemalda sõna esimene ja viimane täht
                 int lastIndex = word.Length - 1;
                 subword = word.Substring(1, word.Length - 2);
-                
+                int distinct = subword.Distinct().Count();
+
                 // shuffle meetod
                 string shuffled = Shuffle(subword);
 
-                // kui algne sõna pikem kui 3 tähte, tee nii kaua, kuni esialgne sõna saab muudetud
-                if (subword.Length>1)
+                // kui algne sõna pikem kui 3 tähte ja ei sisalda keskel samu tähti, tee nii kaua, kuni esialgne sõna saab muudetud
+                if (subword.Length>1 && distinct>1)
                 {
                     while (shuffled == subword)
                     {
