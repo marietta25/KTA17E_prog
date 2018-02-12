@@ -43,7 +43,7 @@ namespace wordMixer
                 }
                 
                 // pane esimene ja viimane täht jälle sõnale juurde
-                Console.WriteLine(word[0]+shuffled+word[lastIndex]);
+                Console.Write(word[0]+shuffled+word[lastIndex]+" ");
             }
 
             Console.WriteLine();
