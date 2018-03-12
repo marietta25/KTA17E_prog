@@ -16,26 +16,27 @@ namespace Caesar_Cipher_OOP
             Console.WriteLine();
 
             Console.Write("Vali, kas soovid teksti krüpteerida või dekrüpteerida (1 = krüpteeri / 2 = dekrüpteeri): ");
-            Console.WriteLine();
-            string choice = Console.ReadLine();
+            var choice = Console.ReadKey();
 
             string userMessage = string.Empty;
             int cipherKey;
 
-            if (choice == "1")
+            if (choice.Key == ConsoleKey.D1)
             {
                 //krüpteeri failist tekst ja salvesta see teise faili
                 userMessage = System.IO.File.ReadAllText(@"C:\Users\marietta.pruuli\KTA17E_prog\src\09_class\DecryptedText.txt");
+                Console.WriteLine();
                 Console.Write("Sisesta šifri nihke arv: ");
                 string input = Console.ReadLine();
                 cipherKey = int.Parse(input);
                 string encryptedMessage = cipher.Encrypt(userMessage, cipherKey);
                 System.IO.File.WriteAllText(@"C:\Users\marietta.pruuli\KTA17E_prog\src\09_class\EncryptedText.txt", encryptedMessage);
             }
-            else if (choice == "2")
+            else if (choice.Key == ConsoleKey.D2)
             {
                 // dekrüpteeri failist tekst ja salvesta see teise faili
                 userMessage = System.IO.File.ReadAllText(@"C:\Users\marietta.pruuli\KTA17E_prog\src\09_class\EncryptedText.txt");
+                Console.WriteLine();
                 Console.Write("Sisesta sifri nihke arv: ");
                 string input = Console.ReadLine();
                 cipherKey = int.Parse(input);
