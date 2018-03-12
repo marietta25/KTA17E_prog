@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caesar_cipher", "Caesar cipher\Caesar_cipher.csproj", "{44B6AA64-5563-40B5-9EF9-B34DF907219B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caesar_Cipher_Textfiles", "Caesar_Cypher_Textfiles\Caesar_Cipher_Textfiles.csproj", "{7E487145-DAA7-4821-92E3-C528F4357685}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caesar_Cipher_OOP", "Caesar_Cipher_OOP\Caesar_Cipher_OOP.csproj", "{C6F36C95-6DE3-4EF5-9478-42D8FB1C0879}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44B6AA64-5563-40B5-9EF9-B34DF907219B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44B6AA64-5563-40B5-9EF9-B34DF907219B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44B6AA64-5563-40B5-9EF9-B34DF907219B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44B6AA64-5563-40B5-9EF9-B34DF907219B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E487145-DAA7-4821-92E3-C528F4357685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E487145-DAA7-4821-92E3-C528F4357685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E487145-DAA7-4821-92E3-C528F4357685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E487145-DAA7-4821-92E3-C528F4357685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6F36C95-6DE3-4EF5-9478-42D8FB1C0879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F36C95-6DE3-4EF5-9478-42D8FB1C0879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F36C95-6DE3-4EF5-9478-42D8FB1C0879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F36C95-6DE3-4EF5-9478-42D8FB1C0879}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
