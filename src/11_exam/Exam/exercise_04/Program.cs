@@ -34,7 +34,10 @@ namespace exercise_04
 
             foreach (var item in birthdays)
             {
-                var age = now.Year - item.Year;
+                var a = (now.Year * 100 + now.Month) * 100 + now.Day;
+                var b = (item.Year * 100 + item.Month) * 100 + item.Day;
+
+                var age = (a - b) / 10000;
                 ages.Add(age);
             }
             int[] agesArray = ages.ToArray();
